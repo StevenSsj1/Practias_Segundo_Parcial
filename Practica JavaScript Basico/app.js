@@ -32,10 +32,8 @@ const tabla = {
   function calcularImpuestoDeTabla(baseImponible, tabla) {
     const indiceTabla = ObtenerElValor(baseImponible);
     if (indiceTabla < 0 || indiceTabla >= tabla.FraccionBasica.length) {
-    
         return null;
     }
-
     const ultimoFraccion = tabla.FraccionBasica[indiceTabla];
     const ultimoExceso = tabla.ExcesoHasta[indiceTabla];
     const ultimoimpuestoFraccionBasica = tabla.impuestoFraccionBasica[indiceTabla];
