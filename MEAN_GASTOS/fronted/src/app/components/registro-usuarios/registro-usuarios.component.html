@@ -1,0 +1,31 @@
+<div class="row">
+    <form class="col s12" #miFormulario>
+        <div class="row">
+            <div class="input-field col s6">
+              <input  type="text" class="validate" id="rucEmpresa" >
+              <label class="active" for="first_name2"  >RUC EMPRESA</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input  type="text" class="validate"  id="nombreEmpresa">
+              <label class="active" for="first_name2"  >NOMBRE EMPRESA</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" class="validate" id="Monto" >
+              <label class="active" for="first_name2" >MONTO</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input  type="text" class="validate" id="tipoGasto" >
+              <label class="active" for="first_name2">TIPO GASTO</label>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light" (click)="enviarFormulario()"  type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+    </form>
+  </div>

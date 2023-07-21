@@ -1,0 +1,21 @@
+<table>
+    <thead>
+      <tr>
+        <th>Tipo de Gasto</th>
+        <th>RUC</th>
+        <th>Empresa</th>
+        <th>Monto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let gasto of usuarios">
+        <td>{{ gasto.tipo }}</td>
+        <td>{{ gasto.ruc }}</td>
+        <td>{{ gasto.empresa }}</td>
+        <td>{{ gasto.monto }}</td>
+          <button (click)="deleteGasto(gasto)">Eliminar</button>
+       
+      </tr>
+    </tbody>
+  </table>
+  
